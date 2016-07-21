@@ -1,6 +1,7 @@
 ---
 layout: nav-all
 title: All Work
+project_landing_weight: 3
 ---
 <!-- / Main -->
 <main id="main" class="wrapper group" role="main">
@@ -18,9 +19,9 @@ title: All Work
 	        </div>
 	    </section>
     </div>
-    <!--  /// Intro.  -->  	
+    <!--  /// Intro.  -->
     <!--  / Portfolio Grid  -->
-    <div class="portfolio-wrap">	        	
+    <div class="portfolio-wrap">
         <div class="portfolio-grid">
             <figure class="portfolio-item portfolio-item-large img-wrap">
 		    	<div class="portfolio-feature-image img-wrap">
@@ -130,15 +131,6 @@ title: All Work
 	    </div>
     </div>
     <!--  /// Portfolio Grid.  -->
-    <div class="nav-work group">
-    	<h5>More Work</h5>
-    	<nav>
-        	<ul>
-        		<li><a href="#">All.</a></li>
-        		<li><a href="#">Brand Identity.</a></li>
-        		<li><a href="#">Digital Communications.</a></li>
-        	</ul>
-    	</nav>
-    </div>
+    {% include projects-nav.html %}
 </main>
 <!--  /// Main.  -->
