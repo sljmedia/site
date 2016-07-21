@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<title>{{ page.title }}</title>
+	<!-- App Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png" />
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png" />
+    <!-- For first and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57-precomposed.png" />
+
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/media-queries.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/cbz0bya.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!-- /// Typekit. -->
+
+    <!-- Scripts -->
+	<script>
+	    $(window).load(function () {
+	        $('.flexslider').flexslider({
+	            animation: "fade",
+	            touch: true,
+	            slideshowSpeed: 8000,
+	            controlNav: "thumbnails"
+	        });
+	    });
+	</script>
+
+</head>
+
+<body>
+
+	<div id="page">
+		<!--  / Header Wrap  -->
+		<div class="header-wrap">
+			<!--  / Header  -->
+		    <header id="masthead" class="site-header group" role="banner">
+					<div class="title-area header-image">
+						<h1 class="site-title" itemprop="headline">
+							<a href="/index.html">SLJ Media</a>
+						</h1>
+						<p class="site-description" itemprop="description"></p>
+					</div>
+					<!--  / Main Navigation  -->
+					<div class="nav-wrap">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<button class="menu-toggle">
+								<span class="toggle-nav">
+								<span class="bar bar-one"></span>
+								<span class="bar bar-two"></span>
+								<span class="bar bar-three"></span>
+								</span>
+					    	</button>
+							<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+							<div class="menu-main-menu-container">
+								<ul id="menu-main-menu" class="nav-menu">
+								    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+								    {% for p in navigation_pages %}
+								      	{% if p.navigation_weight %}
+								        	<li>
+								          	<a href="{{ p.url }}" {% if p.url == page.url %}class="current"{% endif %}>
+								            	{{ p.title }}
+								          	</a>
+								        	</li>
+								      	{% endif %}
+								    {% endfor %}
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!--  /// Main Navigation.  -->
+		    </header>
+		    <!--  /// Header.  -->
+		</div>
+	    <!--  /// Header Wrap.  -->
+
+	    {{ content }}
+
+	    <!--  / Footer  -->
+	    <footer id="footer" class="site-footer" role="contentinfo">
+		    <div class="footer-wrap group">
+		    	<div class="footer-mod footer-brand">
+		    		<h6>SLJ Media</h6>
+		    	</div>
+		    	<div class="footer-mod">
+		    		<p>10a Clifford Court. <br />Cooper Way. <br />Carlisle. <br />CA3 0JG.</p>
+		    		<ul class="contact-info">
+		    			<li><a href="mailto:info@sljmedia.co.uk">info@sljmedia.co.uk</a></li>
+		    			<li>+44 (0)1228 592500</li>
+		    		</ul>
+		    	</div>
+		    	<div class="footer-mod">
+		    		<h6>Jobs</h6>
+		    		<ul>
+		    			<li><a href="#">Back-end Developer</a></li>
+		    			<li><a href="#">Graphic Designer</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="footer-mod footer-contact-mod">
+		    		<p>If you like what we do, then contact us to find out how we can help you.</p>
+		    		<a class="btn" href="#">Contact</a>
+		    	</div>
+		    </div>
+			<div class="copyright group">
+			    <div class="c-notice-wrap">
+				    <p class="c-notice"><small>&copy; 2016 SLJ Media. All Rights Reserved.</small></p>
+					<!--
+					<ul class="menu-legal">
+						<li><a href="#">Cookies</a></li>
+						<li><a href="#">Privacy Statement</a></li>
+						<li><a href="#">Disclaimer</a></li>
+					</ul>
+					-->
+				</div>
+			</div>
+			<a href="#" class="top" title="Top"></a>
+	    </footer>
+	    <!--  /// Footer.  -->
+
+	</div>
+	<!--  /// Page.  -->
+
+    <script type='text/javascript' src='js/jquery.flexslider-min.js'></script>
+    <script type='text/javascript' src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script type='text/javascript' src='js/navigation.js'></script>
+	<script src="js/scrollTop.js"></script>
+	<script src="js/animations.js"></script>
+	<script type="text/javascript" src="selectivizr-min.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	  <script type="text/javascript" src="selectivizr-min.js"></script>
+	  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]-->
+
+</body>
+
+</html>
