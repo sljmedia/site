@@ -8,7 +8,7 @@ layout: default-work
 			{% for p in worknavigation_pages %}
 					{% if p.worknavigation_weight %}
 						<li>
-								<a href="{{ p.url | prepend: site.github.url }}" {% if p.url == page.url %}class="current"{% endif %}>
+								<a href="{{ p.url | prepend: site.github.url }}" {% if p.url == page.url %}class="active"{% endif %}>
 									{{ p.title }}
 								</a>
 						</li>
