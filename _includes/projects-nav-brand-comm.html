@@ -6,7 +6,7 @@
 			    {% for p in navigation_pages %}
 		      	{% if p.project_brandco_weight %}
 		        	<li>
-		          	<a href="{{ p.url }}" {% if p.url == page.url %}class="current"{% endif %}>
+		          	<a href="{{ p.url | prepend: site.github.url }}" {% if p.url == page.url %}class="current"{% endif %}>
 		            	{{ p.title }}
 		          	</a>
 		        	</li>
