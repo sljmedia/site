@@ -1,7 +1,7 @@
 ﻿/*-------------------------------------------------------------------------------------------------------------------
-    
+
     =Media Queries - Min-width
-        
+
 --------------------------------------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -59,12 +59,15 @@
 /*-------------------------------------------------------------------------------------------------------------------
     740px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 740px) {  
+@media screen and (min-width: 740px) {
     /* Typography
     -------------------------------------------*/
 
     /* Header
     -------------------------------------------*/
+    .header-wrap {
+        position: relative;
+    }
     .title-area {
         margin-left: 2.5em;
         padding: 3.5em 0;
@@ -77,7 +80,7 @@
         min-height: 42px;
         width: 168px;
     }
-    .header-intro-wrap, .sub-navigation, .subheader-wrap {margin-top: 112px;}
+    .header-intro-wrap, .sub-navigation, .subheader-wrap {margin-top: 0;} /* 112px */
     .sub-navigation, .subheader {padding: 3.4em 0 2.8em 2.5em;}
     .sub-navigation li a {margin-right: 0;}
     .sub-navigation li, .sub-navigation li a.active {margin-right: 20px;}
@@ -96,14 +99,14 @@
     }
     .header-wrap.smaller .main-navigation {
         margin-top: 1.2em;
-    -webkit-transition: all 0.3s ease-in-out;  
+    -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
          -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
     }
     .main-navigation ul.nav-menu {display: inline-block !important; width: 100%;}
-    .main-navigation div.nav-menu > ul {display: block !important;} 
+    .main-navigation div.nav-menu > ul {display: block !important;}
     .main-navigation ul {text-indent: 0;}
     .main-navigation li a,
     .main-navigation li {
@@ -116,12 +119,12 @@
         display: inline-block;
         padding: 0;
         white-space: nowrap;
-        
+
     }
     .main-navigation li a:hover,
     .main-navigation li a:focus,
     .main-navigation li:hover a {color: #222;}
-    .main-navigation li a.current {   
+    .main-navigation li a.current {
         color: #222;
         padding-bottom: 32px;
     }
@@ -165,7 +168,7 @@
     .menu-toggle {right: 1.5em; top: 3.5em;}
     .header-wrap.smaller .menu-toggle {top: 2em;}
     .header-wrap.smaller .main-navigation ul.nav-menu.toggled-on {margin-top: 5.6em;}
-    
+
     .intro h2 {font-size: 5em;}
 
     /* Slides
@@ -193,7 +196,7 @@
         padding: 3em;
         position: absolute;
         top: 0;
-        width: 100%;       
+        width: 100%;
     }
     .card-overlay:hover .card-content-wrap,
     .portfolio-overlay:hover .feature-content-wrap,
@@ -278,7 +281,7 @@
         text-decoration: none;
     }
 
-    #footer a.top, 
+    #footer a.top,
     .site-footer a.top:after {color: #fff;}
     #footer a.top:after {
         content: "\f106";
@@ -432,7 +435,7 @@
     1040px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1040px) {
-    
+
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -444,6 +447,7 @@
         left: 5em;
         top: 6.5em;
     }
+    .feature-content h3 {font-size: 4em;}
     .card-content h3 {font-size: 2.4em;}
     .article-overlay {padding-top: 4em;}
     .article-overlay-content {
@@ -492,7 +496,7 @@
     1680px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1680px) {
-  
+
 }
 /*-------------------------------------------------------------------------------------------------------------------
     1780px - min-width
