@@ -48,7 +48,7 @@
   .flexslider .slides > li:nth-child(2) .caption-wrap {right: 8%;}
   .flexslider .slides > li:nth-child(3) .caption-wrap,
   .flexslider .slides > li:nth-child(5) .caption-wrap {left: 10%;}
-  .flexslider .slides > li:nth-child(4) .caption-wrap {left: 20%;}
+  .flexslider .slides > li:nth-child(4) .caption-wrap {left: 10%;}
 
   .flexslider .slides > li:nth-child(2) .caption::before,
   .flexslider .slides > li:nth-child(3) .caption::before,
@@ -393,9 +393,9 @@
 
     /* Slideshow
     -------------------------------------------*/
-    .caption::before, .caption::after {height: 80px; top: -20px;}
+    .caption::before, .caption::after {height: 80px; top: -22px;}
     .caption::before {left: -6px;}
-    .caption h2 {font-size: 2em;}
+    .caption h2 {font-size: 1.6em;}
     /* Intro
     -------------------------------------------*/
     .intro {
@@ -491,6 +491,8 @@
     1140px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1140px) {
+    .caption::before, .caption::after {top: -20px;}
+    .caption h2 {font-size: 2em;}
     .intro h2 {font-size: 5.8em;}
     .feature-content, .article-overlay-content {
         left: 5em;
