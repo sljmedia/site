@@ -43,7 +43,7 @@
     border-left: none;
     right: 0;
   }
-  .caption h2 {font-size: .9em;}
+  .caption h2 {font-size: .9em; font-weight: 300;}
   .flexslider .slides > li:nth-child(1) .caption-wrap {left: 14%;}
   .flexslider .slides > li:nth-child(2) .caption-wrap {right: 8%;}
   .flexslider .slides > li:nth-child(3) .caption-wrap,
@@ -393,9 +393,9 @@
 
     /* Slideshow
     -------------------------------------------*/
-    .caption::before, .caption::after {height: 80px; top: -22px;}
+    .caption::before, .caption::after {height: 80px; top: -20px;}
     .caption::before {left: -6px;}
-    .caption h2 {font-size: 1.8em;}
+    .caption h2 {font-size: 2em;}
     /* Intro
     -------------------------------------------*/
     .intro {
