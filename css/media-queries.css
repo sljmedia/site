@@ -15,7 +15,46 @@
     480px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
+  .caption-wrap {
+    background: none;
+    /*display: inline-block;*/
+    padding: 1.5em 0;
+    position: absolute;
+    top: 40%;
+  }
+  .caption {
+    padding: 0 1em;
+    position: relative;
+  }
+  .caption::before, .caption::after {
+    border: 1px solid #161b1e;
+    content: '';
+    display: block;
+    height: 40px;
+    position: absolute;
+    width: 8px;
+    top: -12px;
+  }
+  .caption::before {
+    border-right: none;
+    left: -3px;
+  }
+  .caption::after {
+    border-left: none;
+    right: 0;
+  }
+  .caption h2 {font-size: .9em;}
+  .flexslider .slides > li:nth-child(1) .caption-wrap {left: 14%;}
+  .flexslider .slides > li:nth-child(2) .caption-wrap {right: 8%;}
+  .flexslider .slides > li:nth-child(3) .caption-wrap,
+  .flexslider .slides > li:nth-child(5) .caption-wrap {left: 10%;}
+  .flexslider .slides > li:nth-child(4) .caption-wrap {left: 20%;}
 
+  .flexslider .slides > li:nth-child(2) .caption::before,
+  .flexslider .slides > li:nth-child(3) .caption::before,
+  .flexslider .slides > li:nth-child(2) .caption::after,
+  .flexslider .slides > li:nth-child(3) .caption::after {border-color: #aaa;}
+  .flex-direction-nav a {top: 49.5%;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -43,10 +82,15 @@
         min-height: 51px;
         width: 121px;
     }
-	.menu-toggle {top: 2.4em;}
+	  .menu-toggle {top: 2.4em;}
     .main-navigation ul.nav-menu.toggled-on, .header-intro-wrap, .sub-navigation, .subheader-wrap {margin-top: 75px;}
     .header-intro {padding: 3.4em 2em 2.8em 2em;}
     .header-intro h3, .subheader h3 {font-size: 2.1em;}
+
+    /* Slides
+    -------------------------------------------*/
+    .caption h2 {font-size: 1.1em;}
+    .caption::before, .caption::after {height: 50px; top: -14px;}
 
     /* Pages
     -------------------------------------------*/
@@ -168,7 +212,9 @@
     .menu-toggle {right: 1.5em; top: 3.5em;}
     .header-wrap.smaller .menu-toggle {top: 2em;}
     .header-wrap.smaller .main-navigation ul.nav-menu.toggled-on {margin-top: 5.6em;}
-
+    .caption h2 {font-size: 1.3em;}
+    .caption {padding: 0 1.5em;}
+    .caption::before, .caption::after {height: 60px; top: -18px; width: 11px;}
     .intro h2 {font-size: 5em;}
 
     /* Slides
@@ -347,6 +393,9 @@
 
     /* Slideshow
     -------------------------------------------*/
+    .caption::before, .caption::after {height: 80px; top: -22px;}
+    .caption::before {left: -6px;}
+    .caption h2 {font-size: 1.8em;}
     /* Intro
     -------------------------------------------*/
     .intro {
