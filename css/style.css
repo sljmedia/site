@@ -1227,7 +1227,6 @@ html[xmlns] .slides {display: block;}
 -------------------------------------------------*/
 .flex-direction-nav a {
   /*background: rgba(245, 132, 38, 0.8);*/
-  border-radius: 500px;
   box-sizing: border-box;
   text-decoration: none;
   /*display: none;*/
@@ -1249,6 +1248,7 @@ html[xmlns] .slides {display: block;}
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.flex-direction-nav a:hover {border: none;}
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
   font-size: 30px;
