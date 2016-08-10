@@ -59,7 +59,7 @@
 		    <header id="masthead" class="site-header group" role="banner">
 					<div class="title-area header-image">
 						<h1 class="site-title" itemprop="headline">
-							<a href="/">SLJ Media</a>
+							<a href="{{ site.baseurl }}{{ page.url }}">SLJ Media</a>
 						</h1>
 						<p class="site-description" itemprop="description"></p>
 					</div>
@@ -120,7 +120,7 @@
 		    	</div>
 		    	<div class="footer-mod footer-contact-mod">
 		    		<p>If you like what we do, then contact us to find out how we can help you.</p>
-		    		<a class="btn" href="{{ page.url | prepend: site.github.url }}contact">Contact</a>
+		    		<a class="btn" href="{{ site.baseurl }}contact">Contact</a>
 		    	</div>
 		    </div>
 			<div class="copyright group">
