@@ -309,7 +309,7 @@
     .footer-brand h6 {margin-left: 10%;}
     .copyright {clear: both;}
     #footer a.top {
-        background: rgba(201,42,39,.5);
+        background: rgba(201,42,39,.9);
         bottom: 0;
         display: inline-block;
         font-size: 1.8em;
@@ -324,6 +324,7 @@
     #footer a.top:hover,
     #footer a.top:focus {
         background: rgba(201,42,39,1);
+        border: none;
         text-decoration: none;
     }
 
