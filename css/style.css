@@ -603,7 +603,7 @@ input[type="email"]:focus,
 input[type="url"]:focus,
 textarea:focus {
     background-color: #fff;
-    border: 1px solid #8d631b;
+    border: 1px solid #c92b27;
 }
 
 ::-webkit-input-placeholder,
@@ -1083,6 +1083,12 @@ input[type="submit"] {
 
 .intro p b {
     color: #223740;
+}
+
+.intro-content li {
+    background: url(../images/bullet.png) no-repeat left center;
+    background-size: 6px;
+    padding-left: 1.5em;
 }
 
 .intro .btn {
@@ -1604,7 +1610,7 @@ html[xmlns] .slides {display: block;}
 
 .subheader {
     background: #c92a27;
-    margin-top: 65px;
+    /*margin-top: 65px;*/
     padding: 1.8em 2em;
 }
 
@@ -1654,6 +1660,14 @@ html[xmlns] .slides {display: block;}
     color: #60bb46;
     content: "\f00c";
     margin: 0 8px 0 -22px;
+}
+
+/* General Content
+-------------------------------------------------*/
+.content-wrap {
+    clear: both;
+    margin: 2em auto;
+    max-width: 1260px;
 }
 
 /* Sub-navigation
