@@ -257,6 +257,7 @@
         position: absolute;
         top: 5em;
     }
+    .article-overlay-content {width: 80%;}
     .card-overlay:hover .card-content,
     .portfolio-overlay:hover .feature-content,
     .article-link:hover .article-overlay-content {
