@@ -1743,11 +1743,16 @@ html[xmlns] .slides {display: block;}
     color: #aeaeae;
 }
 
-.nav-work li a.current {color: #aeaeae; text-decoration: line-through;}
-.nav-work li a.current:hover {
-    border: 0 none;
+.nav-work li a.current {
+    border-bottom: 1px solid;
     color: #aeaeae;
-    text-decoration: line-through;
+    /*text-decoration: line-through;*/
+}
+
+.nav-work li a.current:hover {
+    border-bottom: 1px solid;
+    color: #aeaeae;
+    /*text-decoration: line-through;*/
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
