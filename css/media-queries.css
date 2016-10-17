@@ -167,7 +167,10 @@
     }
     .main-navigation li a:hover,
     .main-navigation li a:focus,
-    .main-navigation li:hover a {color: #222;}
+    .main-navigation li:hover a {
+        border-bottom: 0;
+        color: #222;
+    }
     .main-navigation li a.current {
         color: #222;
         padding-bottom: 32px;
