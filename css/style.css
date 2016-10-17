@@ -1519,6 +1519,7 @@ html[xmlns] .slides {display: block;}
 
 .portfolio-item-quote {
     background: #e6e6e6;
+    padding-bottom: 5em;
 }
 
 .portfolio-item blockquote p,
