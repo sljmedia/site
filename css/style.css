@@ -1741,6 +1741,7 @@ html[xmlns] .slides {display: block;}
 
 .nav-work h5 {
     border-bottom: 1px solid #222;
+    display: inline-block;
 }
 
 .nav-work li {
