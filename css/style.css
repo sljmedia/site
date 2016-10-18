@@ -1709,8 +1709,7 @@ html[xmlns] .slides {display: block;}
     background: transparent;
     transition: width .2s ease, background-color .2s ease;
 }
-.sub-navigation li a:hover:after,
-.sub-navigation li a:focus:after {
+.sub-navigation li a:hover:after {
     background: #fff;
     width: 100%;
 }
