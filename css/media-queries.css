@@ -470,6 +470,23 @@
         float: left;
         width: 23.80952380952381%; /* 300px / 1260px */
     }
+    .sub-navigation li a:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 1px;
+        width: 0px;
+        background: transparent;
+        transition: width .2s ease, background-color .2s ease;
+    }
+    .sub-navigation li a:hover:after {
+        background: #fff;
+        width: 100%;
+    }
+    .sub-navigation li a:hover, .sub-navigation li a:focus {
+        border-bottom: none;
+        color: #fff;
+    }
     .sub-navigation li a.active {
         border-bottom: 1px solid #fff;
         /*display: block;*/
