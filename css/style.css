@@ -404,6 +404,7 @@ input[type="submit"],
 .btn-outline {
     background: #222;
     border: none;
+    border-radius: 3px;
     color: #f1f1f1;
     cursor: pointer;
     display: inline-block;
@@ -1571,6 +1572,47 @@ html[xmlns] .slides {display: block;}
 
 .footer-contact-mod p {
     margin-bottom: 1em;
+}
+
+/* Social Links
+-------------------------------------------------- */
+#footer .social-links li {
+  border-radius: 3px;
+  float: left;
+  margin-right: 1em;
+}
+
+#footer .social-links li a {
+  background: rgba(34,34,34,1);
+  border-radius: 3px;
+  display: block;
+  height: 24px;
+  opacity: 1;
+  text-indent: -9999px;
+  width: 24px;
+  /*border: 1px solid white;*/
+}
+
+#footer .social-links li a:hover, #footer .social-links li a:focus {
+  background: #4a4a4a;
+  border: 0 none;
+  /*opacity: .7;*/
+}
+#footer .social-links li.twitter a {
+  background: #222 url(../images/icon_twitter.png) no-repeat left center;
+  background-size: 24px;
+}
+#footer .social-links li.twitter a:hover {
+  background: #4a4a4a url(../images/icon_twitter.png) no-repeat left center;
+  background-size: 24px;
+}
+#footer .social-links li.linkedin a {
+  background: #222 url(../images/icon_linkedin.png) no-repeat left center;
+  background-size: 24px;
+}
+#footer .social-links li.linkedin a:hover {
+  background: #4a4a4a url(../images/icon_linkedin.png) no-repeat left center;
+  background-size: 24px;
 }
 
 /* Copyright
