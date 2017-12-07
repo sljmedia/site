@@ -96,7 +96,7 @@
 
     /* Pages
     -------------------------------------------*/
-    .entry-header {padding: 4em; padding-bottom: 3em;}
+    .entry-header {padding: 3em; padding-bottom: 2.5em;}
     /*.article-compact .entry-header {padding: 3em; padding-bottom: 2em;}*/
     .entry-content {padding: 4em; padding-top:0;}
     /*.article-compact .entry-content {padding: 0 3em;}*/
@@ -368,21 +368,23 @@
         margin-right: 1.58730158730159%;
         width: 49.20634920634921%; /* 620px / 1260px */
     }
-    .news-wrap .article-compact .article-image,
-    .news-wrap .article-compact .entry-header,
-    .news-wrap .article-compact .entry-content {
-        float: left;
-        width: 50%; /* 310px / 620px */
+    .news-wrap .article-main {
+        min-height: 650px;
     }
     .news-wrap .article:nth-child(2n) {margin-right: 0;}
     .intro-logo {width: 200px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
-    860px - min-width
+    900px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 860px) {
-
+@media screen and (min-width: 900px) {
+  .news-wrap .article-compact .article-image,
+  .news-wrap .article-compact .entry-header,
+  .news-wrap .article-compact .entry-content {
+      float: left;
+      width: 50%; /* 310px / 620px */
+  }
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -508,7 +510,7 @@
     1040px - min-width
 --------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1040px) {
-
+  .news-wrap .article-main {min-height: 680px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -533,6 +535,7 @@
     }
     .entry-header {padding: 5em; padding-bottom: 3em;}
     .news-wrap .entry-content {padding: 5em; padding-top:0;}
+    .news-wrap .article-main {min-height: 730px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------

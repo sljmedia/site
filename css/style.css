@@ -1826,6 +1826,10 @@ html[xmlns] .slides {display: block;}
     margin-bottom: .4em;
 }
 
+.article-overlay-content .entry-meta {
+  color: #ddd;
+}
+
 .news-wrap .entry-content {
     padding: 3em;
     padding-top: 0;
