@@ -450,7 +450,7 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 .btn:hover,
 .btn:focus {
-    background: #393939;
+    background: #545454;
     border: none;
     color: #fff;
 }
@@ -1590,7 +1590,7 @@ html[xmlns] .slides {display: block;}
   background-size: 24px;
 }
 #footer .social-links li.twitter a:hover {
-  background: #4a4a4a url(../images/icon_twitter.png) no-repeat left center;
+  background: #545454 url(../images/icon_twitter.png) no-repeat left center;
   background-size: 24px;
 }
 #footer .social-links li.linkedin a {
@@ -1598,7 +1598,7 @@ html[xmlns] .slides {display: block;}
   background-size: 24px;
 }
 #footer .social-links li.linkedin a:hover {
-  background: #4a4a4a url(../images/icon_linkedin.png) no-repeat left center;
+  background: #545454 url(../images/icon_linkedin.png) no-repeat left center;
   background-size: 24px;
 }
 
